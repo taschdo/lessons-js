@@ -1,6 +1,10 @@
-function ucFirst(str) {
-    if (!str) return str;
-    return str[0].toUpperCase() + str.slice(1);
+let user = {
+    name: 'John',
+    age: 30
+};
+
+function count(obj) {
+    return Object.keys(obj).length;
 }
 
-console.log(ucFirst('dima'));
+console.log( count(user) ); // 2
